@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello from the server! Modified by andres');
 });
 
+app.get('/echo', (req, res) => {
+  res.send(req.params);
+});
+
 app.get('/health', (req, res) => {
   res.sendStatus(200);
 });
