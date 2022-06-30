@@ -24,7 +24,7 @@ If you would like deploy the code from your local working directory you can use 
 ```
 tanzu apps workload create andrest-tap-node-example -f config/workload.yaml \
   --local-path . \
-  --source-image tapacr.azurecr.io/andrest-tap/apps-29-06-2022-14-20-01-549446438/andrest-tap-node-example-source \
+  --source-image prefix/andrest-tap-node-example-source \
   --type web \
   --namespace my-apps
 ```
